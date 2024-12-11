@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanderia la Perfezione</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8FC;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #6A0DAD, #9B30FF);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #4A004F, #6A0DAD);
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, #9B30FF, #6A0DAD);
+            color: white;
+            position: relative;
+        }
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+        }
+        .section {
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            position: relative;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #4A004F;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+        }
+        footer {
+            background: linear-gradient(90deg, #4A004F, #6A0DAD);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @keyframes bubble {
+            0% { transform: translateY(0); opacity: 0.9; }
+            100% { transform: translateY(-400px); opacity: 0; }
+        }
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: bubble 6s infinite;
+        }
+        .bubble:nth-child(1) {
+            left: 10%;
+            animation-duration: 7s;
+            animation-delay: 1s;
+        }
+        .bubble:nth-child(2) {
+            left: 30%;
+            animation-duration: 8s;
+            animation-delay: 2s;
+        }
+        .bubble:nth-child(3) {
+            left: 50%;
+            animation-duration: 9s;
+            animation-delay: 3s;
+        }
+        .bubble:nth-child(4) {
+            left: 70%;
+            animation-duration: 6s;
+            animation-delay: 4s;
+        }
+        .bubble:nth-child(5) {
+            left: 90%;
+            animation-duration: 7s;
+            animation-delay: 5s;
+        }
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .service-item {
+            background-color: #F8F8FC;
+            border: 2px solid #6A0DAD;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 220px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: #4A004F;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .about-text {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lavanderia la Perfezione</h1>
+        <p>Il meglio per i tuoi capi!</p>
+    </header>
+
+    <nav>
+        <a href="#services">Servizi</a>
+        <a href="#about">Chi Siamo</a>
+        <a href="#contact">Contatti</a>
+        <a href="#location">Dove Trovarci</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Servizio impeccabile</h2>
+        <p>Consegna a domicilio e cura professionale per ogni esigenza.</p>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+<section id="services" class="section">
+    <h2>I Nostri Servizi</h2>
+    <div class="service-list">
+        <div class="service-item">Ritiro e Consegna a Domicilio gratuita (il servizio è disponibile per più capi di abbigliamento)</div>
+        <div class="service-item">Igienizzazione dei tessuti</div>
+        <div class="service-item">Lavaggio tappeti orientali e antichi</div>
+        <div class="service-item">Trattamento di trapunte e piumoni letto, anche in piuma d'oca</div>
+        <div class="service-item">Lavaggio e sanificazione scarpe sportive</div>
+        <div class="service-item">Accurati lavori di Sartoria</div>
+        <div class="service-item">Lavaggio abito da sposa e da cerimonia</div>
+        <div class="service-item">Confezionamento di coperte e piumoni sottovuoto</div>
+    </div>
+
+    <!-- Contenitore Flex per le tre immagini con margine tra i servizi e le foto -->
+    <div class="image-container">
+        <!-- Prima Immagine -->
+        <img src="images/camicie.jpg" alt="Camicie lavate e stirate" class="service-image">
+        <!-- Seconda Immagine -->
+        <img src="images/camicie3.jpg" alt="Camicie nuove" class="service-image">
+        <!-- Terza Immagine -->
+        <img src="images/camicie2.jpg" alt="Camicie stirate" class="service-image">
+    </div>
+</section>
+
+<!-- Stili direttamente all'interno del file HTML -->
+<style>
+    .service-list {
+        margin-bottom: 50px; /* Maggiore distanza tra i servizi e le immagini */
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px; /* Aggiunto spazio tra le immagini */
+        margin-top: 50px; /* Spazio tra la sezione servizi e le immagini */
+        padding-left: 20px; /* Aggiungi un po' di padding ai lati */
+        padding-right: 20px;
+    }
+
+    .service-image {
+        width: 30%;  /* Le immagini sono più piccole */
+        height: auto;
+        max-height: 250px; /* Ridotto l'altezza per mantenere una proporzione più delicata */
+        border-radius: 15px; /* Immagini più rotonde con angoli più morbidi */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Aumentato l'ombra per un effetto più soft */
+        transition: transform 0.3s ease; /* Transizione morbida quando l'immagine viene messa sopra */
+    }
+
+    .service-image:hover {
+        transform: scale(1.05); /* Aggiungi un effetto hover per ingrandire le immagini quando il mouse passa sopra */
+    }
+</style>
+
+<section id="about" class="section">
+    <h2>Lavanderia ad Alessandria</h2>
+    <p class="about-text">Dal 1937, la nostra lavanderia è un punto di riferimento per la cura e il trattamento dei vostri capi. Fondata e ancora oggi gestita dalla stessa famiglia, la nostra azienda vanta oltre ottant'anni di esperienza nel settore.</p>
+    <p class="about-text">Grazie all'utilizzo di macchinari all'avanguardia, progettati per ridurre l'impatto ambientale, garantiamo un servizio di altissima qualità, che assicura la massima igiene e protezione dei vostri tessuti.</p>
+</section>
+
+<section id="hours" class="section">
+    <h2>Orari di Apertura</h2>
+    <p>Lunedì - Venerdì: 07:30 - 12:30 - 14:30 - 19:15</p>
+    <p>Sabato: 07:30 - 13:00</p>
+    <p>Domenica: Chiuso</p>
+</section>
+
+    <section id="contact" class="section">
+        <h2>Contatti</h2>
+        <p>Telefono: +39 0131254147</p>
+        <p>Email: <a href="mailto:lavanderia.laperfezione@gmail.com">lavanderia.laperfezione@gmail.com</a></p>
+	<p>Indirizzo: Via Dante Alighieri 82, Alessandria</p>
+        <p><a href="https://g.co/kgs/Bmr2DtL" target="_blank">Google Maps</a></p>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lavanderia la Perfezione. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
+
